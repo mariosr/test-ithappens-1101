@@ -1,0 +1,28 @@
+INSERT INTO papel(
+            id, nome)
+    VALUES (1, 'ROLE_ADMIN');
+
+INSERT INTO papel(
+            id, nome)
+    VALUES (2, 'ROLE_USUARIO_COMUM');
+
+INSERT INTO usuario(
+            id, cpf, habilitado, idade, login, nome, password, sexo, email)
+    VALUES (150, '05079638322', TRUE, 25, 'admin', 'administrador', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4', 1, 'mariofalcao.es@gmail.com');
+
+INSERT INTO papel_usuario(
+            usuario_id, papel_id)
+    VALUES (150, 1);
+    
+    
+insert into filial values(1, 'MATEUS SUPERMERCADO 1');
+insert into filial values(2, 'MATEUS SUPERMERCADO 2');    
+    
+insert into produto values(53,'1231231','produto teste','banana',300,'2343242',43.22);
+insert into filial_tem_produtos values(1,53);
+    
+    
+    LOGAR COM:
+    USER: admin
+    PASSWORD:1234
+    
